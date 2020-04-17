@@ -18,4 +18,7 @@ async def on_message(message):
         await client.send_message(message.channel, "Olá Mundo, estou vivo!")
 
 
-client.run('Njk5NDM0MzA5NjY0Mzc0ODU0.XpUZvw.90WUyEcvt7UCibgB63QEqtG8oYc')
+token = open("token.txt", "r")
+tokengrap = token.read()
+token.close()
+client.run(tokengrap)
