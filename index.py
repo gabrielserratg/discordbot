@@ -28,4 +28,7 @@ async def gabriel(ctx):
 async def raider(ctx):
     await ctx.send('FreeFire')
 
-bot.run('Njk5NDM0MzA5NjY0Mzc0ODU0.XpUZvw.90WUyEcvt7UCibgB63QEqtG8oYc')
+token = open("token.txt", "r")
+tokengrap = token.read()
+token.close()
+bot.run(tokengrap)
