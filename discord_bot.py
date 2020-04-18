@@ -24,7 +24,7 @@ tokenopen = open("token.txt", "r")
 tokengrap = tokenopen.read()
 tokenopen.close()
 #bot.run(tokengrap)# 
-TOKEN = tokenopen.read()
+#TOKEN = tokenopen.read()
 
 
 # This is the Bot Token from Discord dev page
@@ -133,4 +133,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run(TOKEN)
+client.run(tokengrap)
